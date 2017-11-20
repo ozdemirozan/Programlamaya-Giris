@@ -1,0 +1,20 @@
+# Ozan Özdemir
+# 20/10/2017
+
+sayi_bir = input("Lütfen Birinci sayıyı (a) Giriniz: ") # print() Fonksiyonu yardımı ile kullanıcımından birinci sayıyı girmesini istiyoruz.
+sayi_iki = input("Lütfen İkinci  sayıyı (b) Giriniz: ") # print() Fonksiyonu yardımı ile kullanıcımından ikinci  sayıyı girmesini istiyoruz.
+sayi_uc =  input("Lütfen Üçüncü  sayıyı (c) Giriniz: ") # print() Fonksiyonu yardımı ile kullanıcımından üçüncü  sayıyı girmesini istiyoruz.
+
+a = int(sayi_bir) # sayi_bir değişkenini int() fonksiyonu yardımı ile tam a değişkeni altında str tipinden int tipine dönüştürüyoruz.  
+b = int(sayi_iki) # sayi_iki değişkenini int() fonksiyonu yardımı ile tam a değişkeni altında str tipinden int tipine dönüştürüyoruz. 
+c = int(sayi_uc)  # sayi_uc değişkenini int() fonksiyonu yardımı ile tam a değişkeni altında str tipinden int tipine dönüştürüyoruz. 
+
+if a == b == c: # Eğer girilen a,b,c sayıları birbirine eşit ise aşağıdaki işlemi yap.
+    print("Girilen üç sayıda birbirine eşittir. ")
+elif a < b and a > c: # Eğer girilen a sayısı b 'den küçük ise ve girilen a sayısı c den büyük ise aşağıdaki işlemi yap. Buradaki "and" operatörü iki koşulda uyarsa çalışır aksi takdirde hata verir.
+    print("A sayısı B ve C sayılarının arasındadır.")
+elif a == b and a < c: 
+    print("A sayısı B sayısı ile eşit fakat C sayısından küçüktür.'")
+elif a < b or a < c: # Burada ise belirtilen koşulda "or" operatörü kullanmış olduk. Koşulların bir tanesinin uygun olması bu operatörün çalışması ve true olması için yeterlidir.
+    print("A sayısı C sayısından veya B sayısından küçüktür.")
+
