@@ -1,0 +1,17 @@
+# Ozan Özdemir
+# 20/10/2017
+
+sayi = input("Lütfen notunuzu giriniz.")
+notunuz= int(sayi)
+
+if notunuz > 100:
+    print("Hatalı bir giriş yaptınız!")
+elif notunuz >=90:
+    print("Harf Notunuz A: ")
+elif notunuz >=80:
+    print("Harf Notunuz B: ")
+elif notunuz >=70:
+    print("Harf Notunuz C: ")
+else:
+    print("Harf Notunuz F: ")
+
